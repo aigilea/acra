@@ -17,8 +17,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="ch.acra.acra">
 
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-
     <application>
         <activity
             android:name="org.acra.dialog.CrashReportDialog"
@@ -31,7 +29,6 @@
         <service
             android:name="org.acra.sender.SenderService"
             android:exported="false"
-            android:permission="android.permission.BIND_JOB_SERVICE"
             android:process=":acra" />
 
         <provider

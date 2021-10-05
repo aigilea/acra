@@ -10,7 +10,7 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 14
+        minSdkVersion 8
         targetSdkVersion androidVersion
         versionName version
         consumerProguardFile proguardFile
@@ -23,8 +23,7 @@ android {
 }
 
 dependencies {
-    implementation "com.android.support:support-compat:$supportVersion"
-    implementation "com.android.support:support-fragment:$supportVersion"
+    implementation "com.android.support:support-v4:$supportVersion"
     implementation "com.android.support:support-annotations:$supportVersion"
     annotationProcessor project(':annotationprocessor')
     compileOnly project(':annotations')
